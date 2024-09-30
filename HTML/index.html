@@ -1,82 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop/PC Store</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>HONDA CẦN THƠ</title>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>Laptop<span>Pro</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart-icon">
-            <a href="#"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
-        </div>
+        <h1>HONDA CẦN THƠ</h1>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>High-Performance Laptops & PCs</h2>
-            <p>Discover the best laptops and PCs for gaming, work, and entertainment.</p>
-            <a href="#" class="btn-primary">Shop Now</a>
-        </div>
-        <div class="hero-image">
-            <img src="hero-laptop.png" alt="Laptop">
-        </div>
-    </section>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#"><i class="icon-home"></i> TRANG CHỦ</a>
+        <a href="#"><i class="icon-motor"></i> SẢN PHẨM</a>
+        <a href="#"><i class="icon-promotion"></i> KHUYẾN MÃI</a>
+        <a href="#"><i class="icon-parts"></i> PHỤ TÙNG VÀ PHỤ KIỆN</a>
+        <a href="#"><i class="icon-news"></i> TIN TỨC</a>
+        <a href="#"><i class="icon-service"></i> DỊCH VỤ</a>
+        <a href="#"><i class="icon-store"></i> CỬA HÀNG</a>
+        <a href="#"><i class="icon-hiring"></i> TUYỂN DỤNG</a>
+    </div>
 
-    <section class="products-highlight">
-        <h2>Featured Products</h2>
-        <div class="product-slider">
-            <div class="slider-item">
-                <img src="laptop.jpg" alt="Gaming Laptop">
-                <h3>Gaming Laptop</h3>
-                <p>$1200</p>
-                <a href="product.html" class="btn-secondary">View Details</a>
-            </div>
-            <div class="slider-item">
-                <img src="pc.jpg" alt="High-Performance PC">
-                <h3>High-Performance PC</h3>
-                <p>$1500</p>
-                <a href="product.html" class="btn-secondary">View Details</a>
-            </div>
-            <div class="slider-item">
-                <img src="laptop-2.jpg" alt="Ultrabook Laptop">
-                <h3>Ultrabook Laptop</h3>
-                <p>$1400</p>
-                <a href="product.html" class="btn-secondary">View Details</a>
-            </div>
+    <!-- Tabs for filtering categories -->
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" onclick="filterCategory('sport')">XE SỐ</div>
+            <div class="tab" onclick="filterCategory('cruiser')">XE TAY GA</div>
+            <div class="tab" onclick="filterCategory('manual')">XE TAY CÔN</div>
+            <div class="tab" onclick="filterCategory('bigbike')">XE PHÂN KHỐI LỚN</div>
         </div>
-    </section>
 
+        <!-- Motorbike details container -->
+        <div class="details-container">
+            <h1 id="motorbike-title">Chi tiết sản phẩm</h1>
+            <img id="motorbike-image" src="https://tse3.mm.bing.net/th?id=OIP.HpafjPM5C3D2RIZ9bTXeNwHaBr&pid=Api&P=0&h=180" alt="Motorbike Image">
+        </div>
+
+        <!-- Motorbike List -->
+        <div class="motorbike-list">
+            <!-- Sport Motorbikes -->
+            <div class="motorbike-item sport" onclick="openDetailsPage('Honda Future 125cc FI', '2024', '125cc', '11.5 HP', '30.524.727 VNĐ', 'Dòng xe tiết kiệm nhiên liệu cao, bền bỉ.', 'https://phattien.com/wp-content/uploads/2019/10/fu-tieu-chuan-xanh-den.png')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/fu-tieu-chuan-xanh-den.png" alt="Honda Future 125cc FI">
+                <h2>Honda Future 125cc FI</h2>
+                <p>Năm: 2024 | Động cơ: 125cc</p>
+                <p class="price">30.524.727 VNĐ</p>
+                <div class="order-box">
+                    <button type="button">Mua ngay</button>
+                </div>
+            </div>
+
+            <div class="motorbike-item sport" onclick="openDetailsPage('Wave ALPHA 110cc', '2024', '110cc', '8.9 HP', '17.859.273 VNĐ', 'Xe số phổ biến, giá cả phải chăng.', 'https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-tieu-chuan-trang-bac.png')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-tieu-chuan-trang-bac.png" alt="Wave ALPHA 110cc">
+                <h2>Wave ALPHA 110cc</h2>
+                <p>Năm: 2024 | Động cơ: 110cc</p>
+                <p class="price">17.859.273 VNĐ</p>
+                <div class="order-box">
+                    <button type="button">Mua ngay</button>
+                </div>
+            </div>
+
+            <!-- Add more motorbike items here -->
+
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <h3>LaptopPro</h3>
-            <p>Your ultimate destination for high-performance laptops and PCs.</p>
-            <ul class="socials">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 LaptopPro. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 HONDA CẦN THƠ | Bản quyền thuộc về tất cả</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript to handle interactions -->
+    <script>
+        // Function to filter motorbikes by category
+        function filterCategory(category) {
+            var items = document.getElementsByClassName('motorbike-item');
+            var tabs = document.getElementsByClassName('tab');
+
+            // Show/Hide items based on category
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].classList.contains(category)) {
+                    items[i].style.display = 'block';
+                } else {
+                    items[i].style.display = 'none';
+                }
+            }
+
+            // Update active tab
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            document.querySelector(`.tab[onclick="filterCategory('${category}')"]`).classList.add('active');
+        }
+
+        // Function to open details page for a specific motorbike
+        function openDetailsPage(title, year, engine, power, price, description, imgSrc) {
+            // Encode data and pass it to the details page via URL
+            var url = `details.html?title=${encodeURIComponent(title)}&year=${encodeURIComponent(year)}&engine=${encodeURIComponent(engine)}&power=${encodeURIComponent(power)}&price=${encodeURIComponent(price)}&description=${encodeURIComponent(description)}&imgSrc=${encodeURIComponent(imgSrc)}`;
+            window.location.href = url;
+        }
+
+        // Show 'Sport' bikes by default
+        filterCategory('sport');
+    </script>
 </body>
 </html>

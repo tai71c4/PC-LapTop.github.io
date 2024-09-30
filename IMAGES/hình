@@ -1,0 +1,22 @@
+ <!-- Motorbike List -->
+        <div class="motorbike-list">
+            <!-- Sport Motorbikes -->
+            <div class="motorbike-item sport" onclick="openDetailsPage('Honda Future 125cc FI', '2024', '125cc', '11.5 HP', '30.524.727 VNĐ', 'Dòng xe tiết kiệm nhiên liệu cao, bền bỉ.', 'https://phattien.com/wp-content/uploads/2019/10/fu-tieu-chuan-xanh-den.png')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/fu-tieu-chuan-xanh-den.png" alt="Honda Future 125cc FI">
+                <h2>Honda Future 125cc FI</h2>
+                <p>Năm: 2024 | Động cơ: 125cc</p>
+                <p class="price">30.524.727 VNĐ</p>
+                <div class="order-box">
+                    <button type="button">Mua ngay</button>
+                </div>
+            </div>
+
+            <div class="motorbike-item sport" onclick="openDetailsPage('Wave ALPHA 110cc', '2024', '110cc', '8.9 HP', '17.859.273 VNĐ', 'Xe số phổ biến, giá cả phải chăng.', 'https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-tieu-chuan-trang-bac.png')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-tieu-chuan-trang-bac.png" alt="Wave ALPHA 110cc">
+                <h2>Wave ALPHA 110cc</h2>
+                <p>Năm: 2024 | Động cơ: 110cc</p>
+                <p class="price">17.859.273 VNĐ</p>
+                <div class="order-box">
+                    <button type="button">Mua ngay</button>
+                </div>
+            </div>
