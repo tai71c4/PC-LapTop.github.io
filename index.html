@@ -5,80 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>HONDA CẦN THƠ</title>
+
 </head>
 <body>
     <header>
         <h1>HONDA CẦN THƠ</h1>
     </header>
-
-    <!-- Navigation Bar -->
     <div class="navbar">
         <a href="#"><i class="icon-home"></i> TRANG CHỦ</a>
-        <a href="#"><i class="icon-motor"></i> SẢN PHẨM</a>
-        <a href="#"><i class="icon-motor"></i> KHUYẾN MÃI</a>
-        <a href="#"><i class="icon-motor"></i> PHỤ TÙNG VÀ PHỤ KIỆN</a>
+        <a href="#"><i class="icon-motor"></i>SẢN PHẨM</a>
+        <a href="#"><i class="icon-motor"></i>KHUYẾN MÃI</a>
+        <a href="#"><i class="icon-motor"></i>PHỤ TÙNG VÀ PHỤ KIÊN</a>
         <a href="#"><i class="icon-news"></i> TIN TỨC</a>
         <a href="#"><i class="icon-service"></i> DỊCH VỤ</a>
         <a href="#"><i class="icon-store"></i> CỬA HÀNG</a>
         <a href="#"><i class="icon-hiring"></i> TUYỂN DỤNG</a>
-    </div>
+    </div>  
 
-    <!-- Tabs for filtering categories -->
     <div class="container">
         <div class="tabs">
             <div class="tab active" onclick="filterCategory('sport')">XE SỐ</div>
             <div class="tab" onclick="filterCategory('cruiser')">XE TAY GA</div>
             <div class="tab" onclick="filterCategory('touring')">XE TAY CÔN</div>
             <div class="tab" onclick="filterCategory('adventure')">XE PHÂN KHỐI LỚN</div>
+            <div class="details-container">
+                <h1 id="motorbike-title"></h1>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.HpafjPM5C3D2RIZ9bTXeNwHaBr&pid=Api&P=0&h=180" alt="Motorbike Image">
+                
+                
+            </div>
         </div>
 
-        <!-- Motorbike details container -->
-        <div class="details-container">
-            <h1 id="motorbike-title"></h1>
-            <img id="motorbike-image" src="https://tse3.mm.bing.net/th?id=OIP.HpafjPM5C3D2RIZ9bTXeNwHaBr&pid=Api&P=0&h=180" alt="Motorbike Image">
-        </div>
-
-        <!-- Motorbike List -->
         <div class="motorbike-list">
             <!-- Sport Motorbikes -->
-            <div class="motorbike-item sport" onclick="openDetailsPage('Honda Future 125cc FI', '2024', '125cc', '11.5 HP', '30.524.727 VNĐ', 'Dòng xe tiết kiệm nhiên liệu cao, bền bỉ.', 'https://phattien.com/wp-content/uploads/2019/10/fu-tieu-chuan-xanh-den.png')">
-                <img src="https://phattien.com/wp-content/uploads/2019/10/fu-tieu-chuan-xanh-den.png" alt="Honda Future 125cc FI">
+            <div class="motorbike-item sport" onclick="openDetailsPage('Yamaha YZF-R1', '2024', '998cc', '200 HP', '$17,500', 'A high-performance sport bike built for speed.', 'motorbike1.jpg')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/fu-tieu-chuan-xanh-den.png" alt="Yamaha YZF-R1">
                 <h2>Honda Future 125cc FI</h2>
-                <p>Năm: 2024 | Động cơ: 125cc</p>
+                <p>Năm : 2024 | Động cơ : 125cc |</p>
                 <p class="price">30.524.727 VNĐ</p>
-                <div class="order-box">
-                    <button type="button">Mua ngay</button>
-                </div>
+                <a href="http://127.0.0.1:5500/chitietxe.html">
+                    <div class="order-box">
+                        
+                        
+                        <button type="button">Mua ngay</button>
+                    </div>
+                </a>
             </div>
 
-            <div class="motorbike-item sport" onclick="openDetailsPage('Wave ALPHA 110cc', '2024', '110cc', '8.9 HP', '17.859.273 VNĐ', 'Xe số phổ biến, giá cả phải chăng.', 'https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-tieu-chuan-trang-bac.png')">
-                <img src="https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-tieu-chuan-trang-bac.png" alt="Wave ALPHA 110cc">
+            <div class="motorbike-item sport" onclick="openDetailsPage('Honda CBR1000RR', '2024', '999cc', '189 HP', '$16,500', 'A legendary bike known for its balance and speed.', 'motorbike2.jpg')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-tieu-chuan-trang-bac.png" alt="Honda CBR1000RR">
                 <h2>Wave ALPHA 110cc</h2>
-                <p>Năm: 2024 | Động cơ: 110cc</p>
-<p class="price">17.859.273 VNĐ</p>
-                <div class="order-box">
-                    <button type="button">Mua ngay</button>
-                </div>
+                <p>Năm: 2024 | Động cơ : 110cc |</p>
+                <p class="price">17.859.273 VNĐ</p>
+                <a href="http://127.0.0.1:5500/wave.html">
+                    <div class="order-box">
+<button type="button">Mua ngay</button>
+                    </div>
+                </a>
             </div>
 
-            <!-- Add more motorbike items here -->
+            <div class="motorbike-item sport" onclick="openDetailsPage('Suzuki GSX-R1000', '2023', '1000cc', '199 HP', '$15,800', 'Designed for top speed and cornering performance.', 'motorbike3.jpg')">
+                <img src="https://phattien.com/wp-content/uploads/2023/12/gKa9cU00hv1JiyQiGVEq.png" alt="Suzuki GSX-R1000">
+                <h2>Wave RSX 2024</h2>
+                <p>Year: 2024 | Động cơ : 110cc  |</p>
+                <p class="price">22.032.000 VNĐ</p>
+            </div>
 
+            <div class="motorbike-item sport" onclick="openDetailsPage('Kawasaki Ninja ZX-10R', '2024', '998cc', '203 HP', '$18,000', 'High-performance superbike with advanced tech.', 'motorbike4.jpg')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/blade-dac-biet-den.png" alt="Kawasaki Ninja ZX-10R">
+                <h2>Honda BLADE 110cc</h2>
+                <p>Year: 2023 | Động cơ : 110cc |</p>
+                <p class="price">18.900.000 VNĐ </p>    
+            </div>
+
+            <div class="motorbike-item sport" onclick="openDetailsPage('Ducati Panigale V4', '2024', '1103cc', '214 HP', '$23,000', 'The ultimate Italian superbike with extreme performance.', 'motorbike5.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/July2024/y87fzDsA84C8QmlEiL9a.png" alt="Ducati Panigale V4">
+                <h2>Super Cup 125cc</h2>
+                <p>Year: 2024 | Động cơ : 125cc | </p>
+                <p class="price">86.292.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item sport" onclick="openDetailsPage('BMW S1000RR', '2024', '999cc', '205 HP', '$20,500', 'A German-engineered beast with superb handling and speed.', 'motorbike6.jpg')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/wave-den-phanh-dia.png" alt="BMW S1000RR">
+                <h2>Wave RSX FI 110cc</h2>
+                <p>Year: 2024 | Động cơ : 110cc |</p>
+                <p class="price">25,243,000 VNĐ</p>
+            </div>
+
+            <!-- Cruiser Motorbikes -->
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Harley Davidson Sportster', '2023', '883cc', '50 HP', '$11,000', 'A classic cruiser with a modern twist.', 'motorbike7.jpg')">
+                <img src="https://phattien.com/wp-content/uploads/2019/10/SH350i-ban-dac-biet-bac-den.png" alt="Harley Davidson Sportster">
+                <h2>SH 350i</h2>
+                <p>Năm: 2023 | Động cơ: 350cc |</p>
+                <p class="price">150.890.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Yamaha VMAX', '2024', '1679cc', '200 HP', '$20,000', 'Powerful cruiser designed for performance.', 'motorbike8.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/August2024/QxRl3u0g5F47OdyXMioE.png" alt="Yamaha VMAX">
+<h2>Air Blade 160</h2>
+                <p>Năm: 2024 | Động cơ: 160cc |</p>
+                <p class="price">42.120.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Kawasaki Vulcan S', '2023', '649cc', '61 HP', '$8,000', 'A nimble cruiser for easy handling.', 'motorbike9.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/November2023/rFb1TP0vIDYY5pQjIULy.png" alt="Kawasaki Vulcan S">
+                <h2>Vario 125</h2>
+                <p>Năm: 2023 | Động cơ: 125cc |</p>
+                <p class="price">40.700.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Honda Rebel 500', '2023', '471cc', '45 HP', '$7,500', 'Stylish cruiser with a low seat height.', 'motorbike10.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/September2023/OLfrtqrQ13j7XpusGRl4.png" alt="Honda Rebel 500">
+                <h2>Vision</h2>
+                <p>Năm: 2023 | Động cơ: 110cc |</p>
+                <p class="price">31.101.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Indian Scout', '2024', '1133cc', '100 HP', '$13,000', 'A classic cruiser with a rich history.', 'motorbike11.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/September2024/7ra4EOo6Nv3k96tNlo16.png" alt="Indian Scout">
+                <h2>LEAD ABS</h2>
+                <p>Năm: 2024 | Động cơ: 150cc |</p>
+                <p class="price">39.959.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Suzuki Boulevard M109R', '2024', '1783cc', '120 HP', '$16,500', 'A muscular cruiser with a powerful presence.', 'motorbike12.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/August2024/OdEB73r6Io8GOwX51wTV.png" alt="Suzuki Boulevard M109R">
+                <h2>Vario 160</h2>
+                <p>Năm: 2024 | Động cơ: 160cc |</p>
+                <p class="price">59.990.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Triumph Rocket 3', '2024', '2458cc', '165 HP', '$22,000', 'The ultimate power cruiser with massive torque.', 'motorbike13.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/August2024/3mJZ9NV7sBmWVJalt796.png" alt="Triumph Rocket 3">
+                <h2>SH Mode 125</h2>
+                <p>Năm: 2024 | Động cơ: 125cc |</p>
+                <p class="price">57.120.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item cruiser" onclick="openDetailsPage('Ducati XDiavel', '2024', '1262cc', '152 HP', '$18,000', 'A luxurious cruiser with sporty performance.', 'motorbike14.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/August2024/h9TheYxZITC0FtJOlGmK.png" alt="Ducati XDiavel">
+                <h2>SH 160i</h2>
+                <p>Năm: 2024 | Động cơ: 160cc |</p>
+<p class="price">73.635.000 VNĐ</p>
+            </div>
+
+            <!-- Touring Motorbikes -->
+            <div class="motorbike-item touring" onclick="openDetailsPage('BMW K1600GTL', '2024', '1649cc', '160 HP', '$25,000', 'The ultimate touring machine with luxury features.', 'motorbike15.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/December2023/ExXq3lP8FbrJIOy7v5uk.jpg" alt="BMW K1600GTL">
+                <h2>Winner X</h2>
+                <p>Năm: 2024 | Động cơ: 150cc |</p>
+                <p class="price">46.000.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item touring" onclick="openDetailsPage('Honda Gold Wing', '2024', '1833cc', '124 HP', '$28,000', 'Luxury touring bike with advanced technology.', 'motorbike16.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/August2024/WygAqXwJo74BFJ3EZ6Bg.png" alt="Honda Gold Wing">
+                <h2>CBR 150R</h2>
+                <p>Năm: 2024 | Động cơ: 150cc |</p>
+                <p class="price">72.000.000 VNĐ</p>
+            </div>
+
+            <!-- Adventure Motorbikes -->
+            <div class="motorbike-item adventure" onclick="openDetailsPage('KTM 1290 Super Adventure R', '2024', '1301cc', '160 HP', '$20,000', 'A powerful adventure bike designed for off-road.', 'motorbike17.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/August2024/IePLpgKL9vub8wJtKv1U.png" alt="KTM 1290 Super Adventure R">
+                <h2>Gold Wing 2023</h2>
+                <p>Năm: 2023 | Động cơ: 1833cc |</p>
+                <p class="price">1.230.900.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item adventure" onclick="openDetailsPage('BMW R1250GS', '2024', '1254cc', '136 HP', '$25,000', 'The ultimate adventure bike for long trips.', 'motorbike18.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/October2023/3rUd85ujREsR7cF6cA2g.png" alt="BMW R1250GS">
+                <h2>CBR1000RR-R Fireblade SP</h2>
+                <p>Năm: 2020 | Động cơ: 1254cc |</p>
+                <p class="price">1.050.500.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item adventure" onclick="openDetailsPage('Honda Africa Twin', '2024', '1084cc', '101 HP', '$14,000', 'A versatile adventure bike for any terrain.', 'motorbike19.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/September2024/zqExeMIg4dDsK52PKpZg.png" alt="Honda Africa Twin">
+                <h2>Honda Africa Twin 2024</h2>
+                <p>Năm: 2023 | Động cơ: 1084cc |</p>
+                <p class="price">720.990.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item adventure" onclick="openDetailsPage('Suzuki V-Strom 1050', '2024', '1037cc', '106 HP', '$13,000', 'A well-rounded adventure bike with great features.', 'motorbike20.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/January2023/ufm1UvQnev4dkXoPMhHh.jpg" alt="Suzuki V-Strom 1050">
+<h2>CB1000R 2023</h2>
+                <p>Năm: 2024 | Động cơ: 1037cc |</p>
+                <p class="price">510.500.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item adventure" onclick="openDetailsPage('Yamaha Tenere 700', '2024', '689cc', '75 HP', '$10,000', 'A lightweight adventure bike for all terrains.', 'motorbike21.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/October2023/n73zke4swCzcIbAMaXGR.png" alt="Yamaha Tenere 700">
+                <h2>Rebel 1100 2023</h2>
+                <p>Năm: 2023 | Động cơ: 1100cc |</p>
+                <p class="price">449.500.000 VNĐ</p>
+            </div>
+
+            <div class="motorbike-item adventure" onclick="openDetailsPage('Kawasaki Versys 650', '2024', '649cc', '69 HP', '$8,500', 'A comfortable adventure bike for touring.', 'motorbike22.jpg')">
+                <img src="https://cdn.honda.com.vn/motorbikes/September2024/phLGvbJQKX11ySGKslZU.png" alt="Kawasaki Versys 650">
+                <h2>CBR500R 2024</h2>
+                <p>Năm: 2024 | Động cơ: 649cc |</p>
+                <p class="price">192.990.000 VNĐ</p>
+            </div>
         </div>
+        
+    </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Motorbike Sales | All Rights Reserved</p>
     </footer>
 
-    <!-- JavaScript to handle interactions -->
     <script>
-        // Function to filter motorbikes by category
-        function filterCategory(category) {
+        function openDetailsPage() {
+            window.location.href = "http://127.0.0.1:5500/chitietxe.html";}
+         function filterCategory(category) {
             var items = document.getElementsByClassName('motorbike-item');
             var tabs = document.getElementsByClassName('tab');
 
-            // Show/Hide items based on category
             for (var i = 0; i < items.length; i++) {
                 if (items[i].classList.contains(category)) {
                     items[i].style.display = 'block';
@@ -87,22 +230,20 @@
                 }
             }
 
-            // Update active tab
             for (var i = 0; i < tabs.length; i++) {
                 tabs[i].classList.remove('active');
             }
             document.querySelector(`.tab[onclick="filterCategory('${category}')"]`).classList.add('active');
         }
 
-        // Function to open details page for a specific motorbike
         function openDetailsPage(title, year, engine, power, price, description, imgSrc) {
-            // Encode data and pass it to the details page via URL
-            var url = `details.html?title=${encodeURIComponent(title)}&year=${encodeURIComponent(year)}&engine=${encodeURIComponent(engine)}&power=${encodeURIComponent(power)}&price=${encodeURIComponent(price)}&description=${encodeURIComponent(description)}&imgSrc=${encodeURIComponent(imgSrc)}`;
-            window.location.href = url;
+            window.location.href = `details.html?title=${encodeURIComponent(title)}&year=${encodeURIComponent(year)}&engine=${encodeURIComponent(engine)}&power=${encodeURIComponent(power)}&price=${encodeURIComponent(price)}&description=${encodeURIComponent(description)}&imgSrc=${encodeURIComponent(imgSrc)}`;
         }
 
         // Show 'Sport' bikes by default
         filterCategory('sport');
+
+
     </script>
 </body>
 </html>
