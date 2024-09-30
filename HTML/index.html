@@ -3,77 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP LAPTOP CẦN THƠ</title>
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
-    <title>SHOP</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-jLKHWMQ6IqhSdtF1aO5Zs+6zbSSvUp23V/xSEzD3qI9rHd6IO8JpRmZ3Zm+gju79" crossorigin="anonymous" />
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>SHOP LAPTOP CẦN THƠ</h1>
+        <div class="logo">
+            <h1>SHOP <span>LAPTOP CẦN THƠ</span></h1>
+        </div>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="#"><i class="fas fa-home"></i> TRANG CHỦ</a></li>
+                <li><a href="#"><i class="fas fa-laptop"></i> LAPTOP</a></li>
+                <li><a href="#"><i class="fas fa-desktop"></i> PC ĐỂ BÀN</a></li>
+                <li><a href="#"><i class="fas fa-headphones-alt"></i> PHỤ KIỆN</a></li>
+                <li><a href="#"><i class="fas fa-tags"></i> KHUYẾN MÃI</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> TIN TỨC</a></li>
+                <li><a href="#"><i class="fas fa-concierge-bell"></i> DỊCH VỤ</a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> TUYỂN DỤNG</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="#"><i class="icon-home"></i> TRANG CHỦ</a>
-        <a href="#"><i class="icon-laptop"></i> LAPTOP</a>
-        <a href="#"><i class="icon-desktop"></i> PC ĐỂ BÀN</a>
-        <a href="#"><i class="icon-accessory"></i> PHỤ KIỆN</a>
-        <a href="#"><i class="icon-promotion"></i> KHUYẾN MÃI</a>
-        <a href="#"><i class="icon-news"></i> TIN TỨC</a>
-        <a href="#"><i class="icon-service"></i> DỊCH VỤ</a>
-        <a href="#"><i class="icon-hiring"></i> TUYỂN DỤNG</a>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Chào mừng đến với <span>SHOP LAPTOP CẦN THƠ</span></h2>
+            <p>Tìm kiếm những sản phẩm công nghệ cao cấp với giá tốt nhất.</p>
+            <a href="#products" class="btn">Khám phá ngay</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1593642532400-2682810df593" alt="Hero Image">
+        </div>
+    </section>
 
     <!-- Tabs for filtering categories -->
     <div class="container">
         <div class="tabs">
-            <div class="tab active" onclick="filterCategory('laptop')">LAPTOP</div>
-            <div class="tab" onclick="filterCategory('pc')">PC ĐỂ BÀN</div>
-            <div class="tab" onclick="filterCategory('accessory')">PHỤ KIỆN</div>
-        </div>
-
-        <!-- Product details container -->
-        <div class="details-container">
-            <h1 id="product-title">Chi tiết sản phẩm</h1>
-            <img id="product-image" src="https://th.bing.com/th/id/OIP.40At57XNzV-Xzt6gYEmSTwHaFA?w=256&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+            <button class="tab active" data-category="all">TẤT CẢ</button>
+            <button class="tab" data-category="laptop">LAPTOP</button>
+            <button class="tab" data-category="pc">PC ĐỂ BÀN</button>
+            <button class="tab" data-category="accessory">PHỤ KIỆN</button>
         </div>
 
         <!-- Product List -->
-        <div class="product-list">
-            <!-- Laptop Items -->
-            <div class="product-item laptop" onclick="openDetailsPage('MacBook Pro M2', '2023', 'Apple M2', '16GB RAM', '40.000.000 VNĐ', 'Laptop hiệu năng cao với chip Apple M2.', 'https://www.apple.com/v/macbook-pro-13/l/images/overview/hero_endframe__bsza6x4fldiq_large_2x.jpg')">
+        <div id="products" class="product-list">
+            <!-- Product Items -->
+            <div class="product-item laptop">
                 <img src="https://www.apple.com/v/macbook-pro-13/l/images/overview/hero_endframe__bsza6x4fldiq_large_2x.jpg" alt="MacBook Pro M2">
                 <h2>MacBook Pro M2</h2>
                 <p>Năm: 2023 | CPU: Apple M2</p>
                 <p class="price">40.000.000 VNĐ</p>
-                <div class="order-box">
-                    <button type="button">Mua ngay</button>
-                </div>
+                <button class="btn" onclick="openDetailsModal('MacBook Pro M2', '2023', 'Apple M2', '16GB RAM', '40.000.000 VNĐ', 'Laptop hiệu năng cao với chip Apple M2.', 'https://www.apple.com/v/macbook-pro-13/l/images/overview/hero_endframe__bsza6x4fldiq_large_2x.jpg')">Chi tiết</button>
             </div>
 
-            <div class="product-item laptop" onclick="openDetailsPage('Dell XPS 13', '2023', 'Intel Core i7', '16GB RAM', '35.000.000 VNĐ', 'Laptop mỏng nhẹ, hiệu năng cao.', 'https://cdn.mos.cms.futurecdn.net/bvKRaPoqH4PDuSuMkxdykU.jpg')">
+            <div class="product-item laptop">
                 <img src="https://cdn.mos.cms.futurecdn.net/bvKRaPoqH4PDuSuMkxdykU.jpg" alt="Dell XPS 13">
                 <h2>Dell XPS 13</h2>
                 <p>Năm: 2023 | CPU: Intel Core i7</p>
                 <p class="price">35.000.000 VNĐ</p>
-                <div class="order-box">
-                    <button type="button">Mua ngay</button>
-                </div>
+                <button class="btn" onclick="openDetailsModal('Dell XPS 13', '2023', 'Intel Core i7', '16GB RAM', '35.000.000 VNĐ', 'Laptop mỏng nhẹ, hiệu năng cao.', 'https://cdn.mos.cms.futurecdn.net/bvKRaPoqH4PDuSuMkxdykU.jpg')">Chi tiết</button>
             </div>
 
             <!-- PC Items -->
-            <div class="product-item pc" onclick="openDetailsPage('PC Gaming ASUS ROG', '2024', 'Intel Core i9', '32GB RAM', '50.000.000 VNĐ', 'PC mạnh mẽ dành cho game thủ.', 'https://dlcdnwebimgs.asus.com/gain/ea0a37da-91c4-4b8b-9f2c-1f92b0c81983/')">
+            <div class="product-item pc">
                 <img src="https://dlcdnwebimgs.asus.com/gain/ea0a37da-91c4-4b8b-9f2c-1f92b0c81983/" alt="PC Gaming ASUS ROG">
                 <h2>PC Gaming ASUS ROG</h2>
                 <p>Năm: 2024 | CPU: Intel Core i9</p>
                 <p class="price">50.000.000 VNĐ</p>
-                <div class="order-box">
-                    <button type="button">Mua ngay</button>
-                </div>
+                <button class="btn" onclick="openDetailsModal('PC Gaming ASUS ROG', '2024', 'Intel Core i9', '32GB RAM', '50.000.000 VNĐ', 'PC mạnh mẽ dành cho game thủ.', 'https://dlcdnwebimgs.asus.com/gain/ea0a37da-91c4-4b8b-9f2c-1f92b0c81983/')">Chi tiết</button>
             </div>
 
-            <!-- Add more products here -->
+            <!-- Add more products as needed -->
+        </div>
+    </div>
 
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetailsModal()">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Product Image">
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <p><strong>Năm:</strong> <span id="modal-year"></span></p>
+                    <p><strong>CPU:</strong> <span id="modal-cpu"></span></p>
+                    <p><strong>RAM:</strong> <span id="modal-ram"></span></p>
+                    <p class="price" id="modal-price"></p>
+                    <button class="btn">Mua ngay</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -83,37 +110,6 @@
     </footer>
 
     <!-- JavaScript to handle interactions -->
-    <script>
-        // Function to filter products by category
-        function filterCategory(category) {
-            var items = document.getElementsByClassName('product-item');
-            var tabs = document.getElementsByClassName('tab');
-
-            // Show/Hide items based on category
-            for (var i = 0; i < items.length; i++) {
-                if (items[i].classList.contains(category)) {
-                    items[i].style.display = 'block';
-                } else {
-                    items[i].style.display = 'none';
-                }
-            }
-
-            // Update active tab
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove('active');
-            }
-            document.querySelector(`.tab[onclick="filterCategory('${category}')"]`).classList.add('active');
-        }
-
-        // Function to open details page for a specific product
-        function openDetailsPage(title, year, cpu, ram, price, description, imgSrc) {
-            // Encode data and pass it to the details page via URL
-            var url = `details.html?title=${encodeURIComponent(title)}&year=${encodeURIComponent(year)}&cpu=${encodeURIComponent(cpu)}&ram=${encodeURIComponent(ram)}&price=${encodeURIComponent(price)}&description=${encodeURIComponent(description)}&imgSrc=${encodeURIComponent(imgSrc)}`;
-            window.location.href = url;
-        }
-
-        // Show 'Laptop' category by default
-        filterCategory('laptop');
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
